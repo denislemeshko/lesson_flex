@@ -21,16 +21,19 @@ background: url(../img/main-bg.jpg) no-repeat center;
 background-size: cover;
 position: relative; }
  
-.main-overlay {
+.main-overlay, .call-to-action-overlay{
 	position: absolute;
 	left: 0; top: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 0.8;
 	z-index: 0;
- background-image: -webkit-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
- background-image: -o-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+ background-image: -webkit-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+ background-image: -o-linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
  background-image: linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+}
+.logo img {
+	width: 18rem;
 }
 .header {
 	display: flex;
@@ -216,4 +219,114 @@ color: #9fa4af;
 .price-btn:hover {
 	background-color: #64e5e2;
 	color: #fff;
+}
+.call-to-action {
+	text-align: center;
+	/*padding: 15rem;*/
+	position: relative;
+	color: #fff;}
+
+	.call-to-action-overlay {
+	text-align: center;
+	padding: 15rem;
+	position: relative;
+	color: #fff;
+}
+.call-to-action span {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.call-to-action h4 {
+	font-weight: 500;
+	font-size: 4.5rem;
+	margin: 2rem auto 2rem;
+}
+.cta-btn {
+	display: inline-block;
+	border: none;
+	background-color: #fff;
+	color: #c2c9db;
+	width: 20rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	height: 5rem;
+	margin: 1rem;
+	border-radius: 100px;
+	transition: 0.2s;
+}
+.cta-btn:hover {
+	background-color: #6e45e2;
+	color: #fff;
+	cursor: pointer;
+}
+.wrap {
+
+	z-index: 2;
+	position: relative;
+}
+.wrap h4 {
+
+}
+.footer-wrap {
+	display: flex;
+	justify-content: center;
+	
+}
+.footer {
+	height: 10vh;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer-menu {
+	width: 50%;
+	
+}
+.footer-menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.footer-menu-link {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #6a6a77;
+	font-weight: 500;
+}
+.footer-get-started {
+	margin-left: 6rem;
+	border: 1px solid #fff;
+	background-color: #6e45e2;
+	padding: 1.2rem 2rem;
+	color: #fff;
+	border-radius: 100px;
+	text-transform: uppercase;
+}
+.line {
+	display: block;
+	width: 90%;
+	height: 1px;
+	background-color: #333;
+	margin: 1rem auto;
+}
+.legal {
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copy {
+font-size: 1.4rem;
+color: #6a6a77;
+}
+.social-links {
+	color: #6a6a77;
+	font-size: 1.4rem;
+	display: inline-block;
+	margin-right: 
 }
